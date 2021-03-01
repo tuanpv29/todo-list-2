@@ -10,14 +10,18 @@
 </head>
 
 <body>
-  <div>
-    <h2>My To Do List</h2>
-    <input type="text" id="inputTodo" placeholder="Title...">
-    <button onclick="addTodo()" id="addTodo">Add</button>
+  <div class="container">
+    <div id="header">
+      <h2>My To Do List</h2>
+      <input type="text" id="inputTodo" placeholder="Title...">
+      <button onclick="addTodo()" id="addTodo">Add</button>
+    </div>
+    <ul id="listTodo">
+    </ul>
+    <div id="nav">
+      <button onclick="sortTodo()" id="sortTodo">Sort by title</button>
+    </div>
   </div>
-
-  <ul id="listTodo">
-  </ul>
   <script src="./script.js"></script>
 </body>
 

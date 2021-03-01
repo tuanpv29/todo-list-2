@@ -1,3 +1,111 @@
-.checked {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ebecf0;
+}
+
+#header {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#header h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#inputTodo,
+#addTodo {
+  width: 75%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  margin-right: -5px;
+}
+
+#addTodo {
+  width: 24.9%;
+  color: #fff;
+  margin-right: 0;
+  background-color: #0065ff !important;
+  transition: 0.2s;
+}
+
+#addTodo:hover {
+  background-color: #0051cc !important;
+}
+
+#nav {
+  background-color: #0065ff !important;
+  padding: 0.25rem;
+}
+
+#sortTodo {
+  padding: 6px 8px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+#sortTodo:hover {
+  color: #fff;
+  background-color: #519839;
+}
+
+#listTodo {
+  list-style-type: none;
+  background-color: #ebecf0;
+  padding: 1rem 2rem;
+}
+
+#listTodo li {
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  position: relative;
+}
+
+#listTodo li:last-child {
+  margin-bottom: 0;
+}
+
+.doneBox {
+  margin-right: 1rem;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 12px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background-color: #ccc;
+}
+
+.deleteBtn:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+li.check {
   text-decoration: line-through;
+  color: #fff;
+  background-color: #888 !important;
 }
