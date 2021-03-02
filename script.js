@@ -16,6 +16,14 @@ var todos = [
   }
 ];
 
+class Todo {
+  constructor(id, title, status) {
+    this.id = id;
+    this.title = title;
+    this.status = status;
+  }
+}
+
 var inputTodo = document.querySelector("#inputTodo");
 var listTodo = document.querySelector("#listTodo");
 
@@ -58,11 +66,10 @@ function createDeleteTodo(obj, li) {
 
 function addTodo() {
   if (inputTodo.value.trim() !== "") {
-    var obj = {};
     var arrId = todos.map(todo => todo.id);
-    obj.id = arrId.length ? Math.max(...arrId) + 1 : 1;
-    obj.title = inputTodo.value;
-    obj.status = false;
+    var id = arrId.length ? Math.max(...arrId) + 1 : 1;
+    var title = inputTodo.value
+    var obj = new Todo(id, title, false)
     todos.push(obj);
     renderTodos();
   }
