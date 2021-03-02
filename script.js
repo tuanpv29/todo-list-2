@@ -1,21 +1,3 @@
-var todos = [
-  {
-    id: 1,
-    title: 'a todo 1',
-    status: false
-  },
-  {
-    id: 2,
-    title: 'c todo 3',
-    status: false
-  },
-  {
-    id: 3,
-    title: 'b todo 2',
-    status: false
-  }
-];
-
 class Todo {
   constructor(id, title, status) {
     this.id = id;
@@ -23,6 +5,12 @@ class Todo {
     this.status = status;
   }
 }
+
+var todos = [
+  new Todo(1, "todo 1", false),
+  new Todo(2, "todo 2", false),
+  new Todo(3, "todo 3", false)
+];
 
 var inputTodo = document.querySelector("#inputTodo");
 var listTodo = document.querySelector("#listTodo");
